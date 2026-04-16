@@ -432,14 +432,6 @@
   <div class="notice" id="notice"></div>
 </div>
 
-<script>
-function enviarWhatsApp() {
-  const numero = "18494714488";
-  const url = "https://wa.me/" + numero; // SIN mensaje
-  window.open(url, "_blank");
-}
-</script>
-
 
       </div>
     </section>
@@ -491,7 +483,7 @@ function enviarWhatsApp() {
       }
       mensaje += '%0AEnvíame disponibilidad, por favor.';
 
-      const url = 'https://wa.me/' + WHATSAPP_NUMBER + '?text=' + mensaje;
+      const url = 'https://wa.me/' + WHATSAPP_NUMBER;
       window.open(url, '_blank');
     }
 
