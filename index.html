@@ -408,13 +408,37 @@
         </div>
 
 <div class="card" style="margin-top:20px; text-align:center; border:1px solid rgba(245,193,92,.3); background:#0f0f0f;">
-  <h3 style="color:#f5c15c; margin-bottom:10px;"> Gracias por confiar en <b>Gomez Rentals.</b></h3>
+  <h3 style="color:#f5c15c; margin-bottom:10px;">
+    Gracias por confiar en <b>Gomez Rentals.</b>
+  </h3>
+
   <p style="color:#e9ddc2; margin:0;">
     Recuerda enviar una foto del <b>comprobante</b> de pago.
   </p>
-	<button class="wa" onclick="enviarWhatsApp()">Confirmación/Preguntas por WhatsApp</button>
-    <div class="notice" id="notice"></div>
+
+  <button class="wa" onclick="enviarWhatsApp()" style="
+    margin-top:15px;
+    background-color:#25D366;
+    color:white;
+    padding:12px 20px;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+  ">
+    Confirmación / Preguntas por WhatsApp
+  </button>
+
+  <div class="notice" id="notice"></div>
 </div>
+
+<script>
+function enviarWhatsApp() {
+  const numero = "18494714488";
+  const url = "https://wa.me/" + numero; // SIN mensaje
+  window.open(url, "_blank");
+}
+</script>
 
 
       </div>
